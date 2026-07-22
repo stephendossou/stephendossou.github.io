@@ -1,0 +1,206 @@
+%% ============================================================
+%%  Stephen Dossou — Academic CV (job market format)
+%%  Compile: pdflatex CV_Dossou.tex
+%%
+%%  >>> LIS LES BLOCS "À COMPLÉTER" AVANT D'ENVOYER CE CV. <<<
+%%  Tout ce qui est entre [crochets] est un trou que je ne
+%%  pouvais pas remplir sans inventer. Ne l'envoie pas tel quel.
+%% ============================================================
+
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue}
+
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+% Section headings: small caps, rule underneath
+\titleformat{\section}
+  {\normalfont\large\scshape}{}{0em}{}[\vspace{-0.6em}\rule{\textwidth}{0.4pt}]
+\titlespacing{\section}{0pt}{1.2em}{0.6em}
+
+% Entry helper: \entry{left}{right}
+\newcommand{\entry}[2]{\textbf{#1}\hfill #2\\}
+
+% Placeholder helper — renders visibly so you cannot miss it
+\newcommand{\todo}[1]{\textcolor{red}{[#1]}}
+
+\begin{document}
+
+%% ── Header ────────────────────────────────────────────────
+\begin{center}
+{\LARGE \textbf{Stephen Dossou}}\\[0.5em]
+Mines Paris -- PSL, CERNA \\
+60 boulevard Saint-Michel, 75006 Paris \\
+\href{mailto:stephen.dossou@minesparis.psl.eu}{stephen.dossou@minesparis.psl.eu}
+\\[0.3em]
+Citizenship: Benin
+\end{center}
+
+%% ── Fields ────────────────────────────────────────────────
+\section{Research Fields}
+
+\textbf{Primary:} Entrepreneurial Finance, Venture Capital \\
+\textbf{Secondary:} Contract Theory and Mechanism Design, Applied Econometrics
+
+%% ── Education ─────────────────────────────────────────────
+\section{Education}
+
+\entry{Ph.D. in Economics, Mines Paris -- PSL (CERNA, ED SDOSE)}{2024 -- expected 2027}
+\hspace{1em} Advisors: Pierre Fleckinger and Philippe Mustar
+\\[0.5em]
+
+\entry{Diplôme d'Ingénieur (M.Sc.\ equivalent), CentraleSupélec}{2020 -- 2024}
+\hspace{1em} Information \& Communication Engineering. Optimization, machine learning,
+network theory, \\
+\hspace{1em} quantitative modelling.
+\\[0.5em]
+
+\entry{Classes Préparatoires (MPSI, MP*), Lycée Louis-le-Grand, Paris}{2018 -- 2020}
+\hspace{1em} Competitive undergraduate programme in advanced mathematics and physics.
+
+%% ── Job Market Paper ──────────────────────────────────────
+\section{Job Market Paper}
+
+\textbf{``Avoiding the British: Brexit, Cross-Border Syndication, and the
+Identification of Mechanisms under Market-Wide Shocks''}
+\\[0.4em]
+Did Brexit break the co-investment ties between British and continental European
+venture capitalists? I summarize my findings. First, continental VCs with high
+pre-determined exposure to UK partners durably cut the share of their syndicates
+including a British investor by 8.2 percentage points against a base rate of 18.7\%, and
+among thirteen partner-country corridors subjected to an identical, pre-specified
+protocol the United Kingdom is the only one to move. Second, established UK--continental
+dyads were no more likely to dissolve than comparable continental dyads (triple
+difference $+0.3$ pp, $p=0.77$). Third, the aggregate volume of jointly syndicated deals
+tracked control corridors within $[-20\%, +26\%]$: the relationship thinned at the
+new-syndicate margin without existing ties rupturing or deal flow collapsing. To arrive
+at these conclusions, I set up an exposure-based event study on more than 1.2 million
+Crunchbase investor--round observations, control for small$\times$post composition, and
+conduct inference by wild-cluster bootstrap with few clusters, running the same
+falsification protocol across every partner-country corridor. The methodological lesson
+comes last: when a market-wide shock treats every agent on the same date, designs
+without an untreated unit do not lose precision --- they manufacture mechanisms.
+
+%% ── Working Papers ────────────────────────────────────────
+\section{Working Papers}
+
+\textbf{``Pooling Contracts between Venture Capital Institutions''}
+(with Pierre Fleckinger)
+\begin{itemize}[leftmargin=1.2em, itemsep=1pt, topsep=2pt]
+\item An informed-principal framework for contracts between institutions in venture
+capital. Under ex-post commitment --- the accelerator-to-VC relationship --- the unique
+optimal contract is pooling with a binding budget constraint on the agency, and some
+positive-NPV projects are necessarily excluded. Under ex-ante commitment --- the
+LP-to-VC relationship --- the budget constraint is slack and all profitable projects are
+financed in cash-rich economies. \emph{JEL:} G24, G23, D82, D86.
+\end{itemize}
+
+\vspace{0.3em}
+\textbf{``Bridge Financing under Accelerator Contracts:
+A Model of Y~Combinator's 2022 MFN SAFE Reform''}
+\begin{itemize}[leftmargin=1.2em, itemsep=1pt, topsep=2pt]
+\item A sequential financing game (accelerator, bridge investor, seed investor,
+entrepreneur) analysing the most-favored-nation clause in accelerator contracts. The
+equilibrium bridge share is independent of the amount bridged; the linear MFN is the
+unique detail-free schedule implementing the efficient cap-table overhang for every
+financing need; and the gain from a richer instrument is quadratic in the ratio of
+bridge needs to overhang value --- nil on the empirically relevant domain.
+\end{itemize}
+
+%% ── Policy reports ────────────────────────────────────────
+\section{Policy Reports}
+
+\textbf{``Devenir ETI : les chemins de la croissance''} \hfill June 2025 \\
+with Pierre Fleckinger, Philippe Mustar and Antoine Prévet. \\
+Chaire etilab, Mines Paris -- PSL. Report on the growth of French SMEs into
+mid-sized firms, \\
+combining firm-level statistical analysis, theory, and interviews with company
+executives.
+
+%% ── Presentations ─────────────────────────────────────────
+\section{Presentations}
+
+EARIE (European Association for Research in Industrial Economics),
+Mannheim \hfill August 2026 \\
+\hspace{1em} \emph{Pooling Contracts between Venture Capital Institutions} (scheduled)
+\\[0.4em]
+
+Internal doctoral workshop, Mines Paris -- PSL (CERNA) \hfill July 2026 \\
+\hspace{1em} \emph{Avoiding the British: Brexit, Cross-Border Syndication, and the Identification of Mechanisms}
+\\[0.4em]
+
+IOEA (Institute of Organizational Economics Academy), Cargèse \hfill April 2026 \\
+\hspace{1em} \emph{Pooling Contracts between Venture Capital Institutions}
+\\[0.4em]
+
+Journée des Doctorants (joint with Université Paris-Dauphine),
+Mines Paris -- PSL \hfill March 2026 \\
+\hspace{1em} \emph{Pooling Contracts between Venture Capital Institutions}
+
+%% ── Teaching ──────────────────────────────────────────────
+\section{Teaching}
+
+\entry{Microeconomics (undergraduate, first-year engineering cycle)}{2024 -- 2026}
+\hspace{1em} Teaching assistant (\emph{travaux dirigés}), Mines Paris -- PSL.
+Two academic years (2024--2025, \\
+\hspace{1em} 2025--2026); 6 hours of tutorials per year plus exam grading.
+
+%% ── Professional experience ───────────────────────────────
+\section{Professional Experience}
+
+\entry{Research Assistant, Mines Paris -- PSL}{Jan.\ 2024 -- Oct.\ 2024}
+\hspace{1em} Research on startups and mid-sized firms in France; construction and
+analysis of large \\
+\hspace{1em} firm-level financial datasets.
+\\[0.4em]
+
+\entry{Business Analyst (apprenticeship), Forvia}{Sept.\ 2022 -- Jan.\ 2024}
+\hspace{1em} Digital transformation initiatives in an industrial environment;
+operational monitoring tools.
+\\[0.4em]
+
+\entry{Marketing Analyst (internship), Manda}{Sept.\ 2021 -- Jan.\ 2022}
+\hspace{1em} Acquisition strategy and performance analytics.
+\\[0.4em]
+
+\entry{Data Scientist (internship), Onogone}{July -- Aug.\ 2021}
+\hspace{1em} Development and evaluation of NLP models.
+
+%% ── Skills ────────────────────────────────────────────────
+\section{Skills}
+
+\textbf{Methods:} Panel and event-study designs, difference-in-differences and triple
+differences, wild-cluster bootstrap inference with few clusters, falsification and
+placebo protocols, mechanism design and optimal control. \\[0.3em]
+\textbf{Software:} Python, R, \LaTeX{}, Matlab. \\[0.3em]
+\textbf{Data:} Crunchbase; construction of investor--round and dyad-level panels
+($>$1.2M investor--round observations).
+
+%% ── Languages ─────────────────────────────────────────────
+\section{Languages}
+
+French (native), English (C1).
+
+%% ── References ────────────────────────────────────────────
+\section{References}
+
+\textbf{Pierre Fleckinger} \\
+Professor, Mines Paris -- PSL (CERNA) --- \href{mailto:pierre.fleckinger@minesparis.psl.eu}{pierre.fleckinger@minesparis.psl.eu}
+\\[0.4em]
+\textbf{Philippe Mustar} \\
+Professor, Mines Paris -- PSL (CERNA) --- \href{mailto:philippe.mustar@minesparis.psl.eu}{philippe.mustar@minesparis.psl.eu}
+
+\vfill
+{\footnotesize \emph{Last updated:} \today}
+
+\end{document}
