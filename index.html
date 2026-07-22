@@ -37,6 +37,13 @@
   a{color:var(--link); text-decoration:none}
   a:hover{text-decoration:underline}
   header{padding:64px 0 26px}
+  .headtop{display:flex; align-items:center; gap:28px}
+  .headtext{min-width:0}
+  .portrait{
+    width:140px; height:140px; flex-shrink:0;
+    border-radius:14px; object-fit:cover; object-position:center 20%;
+    border:1px solid var(--rule);
+  }
   h1{
     font-family:Georgia,"Times New Roman",serif;
     font-weight:600; font-size:2.5rem; line-height:1.1; margin:0 0 8px;
@@ -100,6 +107,8 @@
     h1{font-size:2rem}
     nav a{margin-right:14px}
     .contact .k{display:block; width:auto; margin-bottom:-2px}
+    .headtop{flex-direction:column; align-items:flex-start; gap:16px}
+    .portrait{width:112px; height:112px}
   }
 </style>
 </head>
@@ -108,9 +117,14 @@
 
   <header>
     <button class="themetoggle" id="themetoggle" aria-label="Toggle theme">Theme</button>
-    <h1>Stephen Dossou</h1>
-    <p class="role">PhD Candidate in Economics · Mines Paris – PSL (CERNA)</p>
-    <p class="fields">Entrepreneurial Finance · Venture Capital · Contract Theory &amp; Mechanism Design</p>
+    <div class="headtop">
+      <img class="portrait" src="img/portrait.jpg" alt="Stephen Dossou">
+      <div class="headtext">
+        <h1>Stephen Dossou</h1>
+        <p class="role">PhD Candidate in Economics · Mines Paris – PSL (CERNA)</p>
+        <p class="fields">Entrepreneurial Finance · Venture Capital · Contract Theory &amp; Mechanism Design</p>
+      </div>
+    </div>
     <nav>
       <a href="#about">About</a>
       <a href="#research">Research</a>
