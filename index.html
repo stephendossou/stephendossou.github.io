@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stephen Dossou</title>
+<meta name="description" content="Stephen Dossou — PhD candidate in Economics at Mines Paris – PSL (CERNA). Entrepreneurial finance, venture capital, and contract theory.">
+<style>
+  :root{
+    --bg:#fbfbf9; --fg:#1c1b19; --muted:#6b6862; --rule:#e4e1d9;
+    --accent:#7a2e2e; --card:#ffffff; --link:#7a2e2e;
+    --maxw:720px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#14140f; --fg:#e9e7e0; --muted:#9c988e; --rule:#2c2b25;
+      --accent:#d99a6c; --card:#1b1a15; --link:#d99a6c;
+    }
+  }
+  :root[data-theme="light"]{
+    --bg:#fbfbf9; --fg:#1c1b19; --muted:#6b6862; --rule:#e4e1d9;
+    --accent:#7a2e2e; --card:#ffffff; --link:#7a2e2e;
+  }
+  :root[data-theme="dark"]{
+    --bg:#14140f; --fg:#e9e7e0; --muted:#9c988e; --rule:#2c2b25;
+    --accent:#d99a6c; --card:#1b1a15; --link:#d99a6c;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65; font-size:17px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 22px}
+  a{color:var(--link); text-decoration:none}
+  a:hover{text-decoration:underline}
+  header{padding:64px 0 26px}
+  h1{
+    font-family:Georgia,"Times New Roman",serif;
+    font-weight:600; font-size:2.5rem; line-height:1.1; margin:0 0 8px;
+    letter-spacing:-.01em;
+  }
+  .role{color:var(--muted); font-size:1.05rem; margin:0 0 4px}
+  .fields{color:var(--muted); font-size:.95rem; margin:0}
+  nav{
+    border-top:1px solid var(--rule); border-bottom:1px solid var(--rule);
+    margin-top:26px; padding:12px 0; font-size:.9rem; letter-spacing:.02em;
+  }
+  nav a{color:var(--fg); margin-right:22px; text-transform:uppercase; font-size:.8rem}
+  nav a:hover{color:var(--accent)}
+  section{padding:38px 0; border-bottom:1px solid var(--rule)}
+  section:last-of-type{border-bottom:none}
+  h2{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:.95rem; text-transform:uppercase; letter-spacing:.09em;
+    color:var(--accent); font-weight:600; margin:0 0 20px;
+  }
+  p{margin:0 0 14px}
+  .lead{font-size:1.05rem}
+  .paper{margin:0 0 30px}
+  .paper:last-child{margin-bottom:0}
+  .paper .ttl{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:1.17rem; font-weight:600; line-height:1.3; margin:0 0 3px;
+  }
+  .paper .meta{color:var(--muted); font-size:.9rem; margin:0 0 9px}
+  .paper .abs{font-size:.96rem; color:var(--fg); margin:0 0 9px}
+  .paper .links a{
+    font-size:.82rem; text-transform:uppercase; letter-spacing:.04em;
+    border:1px solid var(--rule); padding:3px 10px; border-radius:4px;
+    margin-right:8px; display:inline-block; color:var(--muted);
+  }
+  .paper .links a:hover{border-color:var(--accent); color:var(--accent); text-decoration:none}
+  .tag{
+    display:inline-block; font-size:.68rem; text-transform:uppercase;
+    letter-spacing:.06em; color:var(--accent); border:1px solid var(--accent);
+    border-radius:3px; padding:1px 7px; vertical-align:middle; margin-left:8px;
+    font-weight:600;
+  }
+  .contact li{list-style:none; margin:0 0 6px; padding:0}
+  .contact ul{padding:0; margin:0}
+  .contact .k{display:inline-block; width:96px; color:var(--muted); font-size:.85rem;
+    text-transform:uppercase; letter-spacing:.04em}
+  footer{padding:34px 0 60px; color:var(--muted); font-size:.82rem}
+  .themetoggle{
+    background:none; border:1px solid var(--rule); color:var(--muted);
+    border-radius:4px; padding:4px 9px; font-size:.75rem; cursor:pointer;
+    float:right; margin-top:6px;
+  }
+  .themetoggle:hover{border-color:var(--accent); color:var(--accent)}
+  @media (max-width:560px){
+    header{padding:44px 0 20px}
+    h1{font-size:2rem}
+    nav a{margin-right:14px}
+    .contact .k{display:block; width:auto; margin-bottom:-2px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <button class="themetoggle" id="themetoggle" aria-label="Toggle theme">Theme</button>
+    <h1>Stephen Dossou</h1>
+    <p class="role">PhD Candidate in Economics · Mines Paris – PSL (CERNA)</p>
+    <p class="fields">Entrepreneurial Finance · Venture Capital · Contract Theory &amp; Mechanism Design</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="cv.pdf">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p class="lead">I am a PhD candidate in Economics at Mines Paris – PSL, in the CERNA research centre,
+    advised by Pierre Fleckinger and Philippe Mustar (expected 2027).</p>
+    <p>My work is in entrepreneurial finance and venture capital, combining applied econometrics
+    with contract theory. On the empirical side I study how market-wide shocks reshape cross-border
+    syndication networks, with attention to what such designs can and cannot identify. On the
+    theoretical side I model the contracts that tie venture capital institutions together —
+    accelerators, bridge investors, and limited partners.</p>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+
+    <div class="paper">
+      <p class="ttl">Avoiding the British: Brexit, Cross-Border Syndication, and the Identification
+      of Mechanisms under Market-Wide Shocks <span class="tag">Job Market Paper</span></p>
+      <p class="meta">Solo-authored · 2026</p>
+      <p class="abs">Did Brexit break the co-investment ties between British and continental European
+      venture capitalists? Using Crunchbase data and an exposure-based event study with wild-cluster
+      bootstrap inference, I find that continental VCs with high pre-determined exposure to UK partners
+      durably cut the share of their syndicates including a British investor by 8.2 percentage points;
+      among thirteen partner-country corridors subjected to an identical, pre-specified protocol, the
+      United Kingdom is the only one to move. Established dyads did not dissolve and aggregate
+      co-syndication volume held: the relationship thinned at the new-syndicate margin without existing
+      ties rupturing. When a shock treats every agent on the same date, designs without an untreated
+      unit do not lose precision — they manufacture mechanisms.</p>
+      <p class="links"><a href="papers/avoiding-the-british.pdf">PDF</a></p>
+    </div>
+
+    <div class="paper">
+      <p class="ttl">Pooling Contracts between Venture Capital Institutions</p>
+      <p class="meta">with Pierre Fleckinger · Working paper</p>
+      <p class="abs">An informed-principal framework for contracts between institutions in venture
+      capital. Under ex-post commitment — the accelerator-to-VC relationship — the unique optimal
+      contract is pooling with a binding budget constraint on the agency, and some positive-NPV
+      projects are necessarily excluded. Under ex-ante commitment — the LP-to-VC relationship — the
+      budget constraint is slack and all profitable projects are financed in cash-rich economies.</p>
+      <p class="links"><a href="papers/pooling-contracts.pdf">PDF</a></p>
+    </div>
+
+    <div class="paper">
+      <p class="ttl">Bridge Financing under Accelerator Contracts: A Model of Y&nbsp;Combinator's
+      2022 MFN SAFE Reform</p>
+      <p class="meta">Solo-authored · Working paper</p>
+      <p class="abs">A sequential financing game — accelerator, bridge investor, seed investor,
+      entrepreneur — analysing Y&nbsp;Combinator's 2022 addition of an uncapped most-favored-nation
+      SAFE. Solving by backward induction, I show that the equilibrium bridge share is independent of
+      the amount bridged, and that the SAFE's cap acts as a ratchet: on small needs the MFN tranche is
+      threshold-neutral, while on larger needs it degenerates into a tax on the investment cost. The
+      two components of the reform push in opposite directions, so its net effect on reaching a priced
+      round is ambiguous — and therefore testable.</p>
+      <p class="links"><a href="papers/bridge-financing-accelerator-contracts.pdf">PDF</a></p>
+    </div>
+
+    <div class="paper">
+      <p class="ttl">Devenir ETI : les chemins de la croissance</p>
+      <p class="meta">with Pierre Fleckinger, Philippe Mustar &amp; Antoine Prévet · Chaire etilab, Mines Paris – PSL · 2025</p>
+      <p class="abs">Policy report on the growth of French SMEs into mid-sized firms, combining
+      firm-level statistical analysis, theory, and interviews with company executives.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <ul>
+        <li><span class="k">Email</span> <a href="mailto:stephen.dossou@minesparis.psl.eu">stephen.dossou@minesparis.psl.eu</a></li>
+        <li><span class="k">Affiliation</span> CERNA, Mines Paris – PSL</li>
+        <li><span class="k">Address</span> 60 boulevard Saint-Michel, 75006 Paris, France</li>
+        <li><span class="k">CV</span> <a href="cv.pdf">Curriculum vitæ (PDF)</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="yr"></span> Stephen Dossou.
+  </footer>
+
+</div>
+
+<script>
+  (function(){
+    var root=document.documentElement;
+    var btn=document.getElementById('themetoggle');
+    var stored=null;
+    try{stored=localStorage.getItem('theme');}catch(e){}
+    if(stored){root.setAttribute('data-theme',stored);}
+    btn.addEventListener('click',function(){
+      var cur=root.getAttribute('data-theme');
+      if(!cur){
+        cur=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+      }
+      var next=cur==='dark'?'light':'dark';
+      root.setAttribute('data-theme',next);
+      try{localStorage.setItem('theme',next);}catch(e){}
+    });
+    document.getElementById('yr').textContent=new Date().getFullYear();
+  })();
+</script>
+</body>
+</html>
